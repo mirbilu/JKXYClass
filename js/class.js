@@ -16,16 +16,16 @@ $(document).ready(function() {
     })
     // 设置顶部导航栏鼠标覆盖显示效果
     $(".top_nav").mouseover(function() {
-        $(this).children(".topnavli").fadeIn();
+        $(this).children(".topnavli").show();
     })
     // 设置顶部导航栏鼠标移出消失效果
     $(".topnavli").mouseout(function() {
-        $(this).fadeOut();
+        $(this).hide();
     })
     // 设置课程信息鼠标覆盖显示效果
     $(".class_name").mouseover(function() {
-        $(this).children("div").children(".c_introduce").fadeIn();
-        $(this).children("div").children(".c_level").fadeIn();
+        $(this).children("div").children(".c_introduce").show();
+        $(this).children("div").children(".c_level").show();
         $(this).children(".video_bg").css({ "opacity": "0.5" });
         $(this).children(".video_bg").children("i").css("display", "block");
     })
@@ -73,7 +73,7 @@ $(document).ready(function() {
     })
     // 顶部导航栏搜索框效果
     $("#admin_1").click(function(){
-    	$("#search_part").fadeIn();
+    	$("#search_part").show();
     	$("#admin_search").css("right","-155px");
     })
     $(".search_button").click(function(){
@@ -84,9 +84,9 @@ $(document).ready(function() {
     $(window).scroll(function(){
     	var m=$(window).scrollTop();
     	if (m>0) {
-    		$("#cbt_ico1").fadeIn();
+    		$("#cbt_ico1").show();
     	}else{
-    		$("#cbt_ico1").fadeOut();
+    		$("#cbt_ico1").hide();
     	}
     })
     $("#cbt_ico1").click(function(){
